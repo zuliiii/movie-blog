@@ -1,0 +1,17 @@
+.header {
+  padding: 0 4rem;
+}
+.logo img {
+  height: 5rem !important;
+  width: 6rem !important;
+}
+button {
+  padding: 0.5rem 1rem;
+  background-color: #e50914;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  border: 0.2rem;
+  font-weight: bolder;
+  font-size: 1.05rem;
+}

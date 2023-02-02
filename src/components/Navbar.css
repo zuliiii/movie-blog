@@ -1,0 +1,60 @@
+.scrolled {
+  background-color: #000;
+}
+nav {
+  position: sticky;
+  top: 0;
+  height: 6.5rem;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  padding: 0 4rem;
+  align-items: center;
+}
+nav .left {
+  gap: 2rem;
+}
+nav img {
+  height: 4rem !important;
+  width: 6rem !important;
+}
+nav .links {
+  list-style-type: none;
+  gap: 2rem;
+}
+nav .links li a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav .right {
+  gap: 1rem;
+}
+nav .right button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+nav .right button:focus {
+  outline: none;
+}
+nav .right button svg {
+  color: #f34242;
+  font-size: 1.2rem;
+}
+nav .right .search {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+}
+nav .right .search input {
+  border: 0.5px solid #fff;
+  background-color: #00000099;
+  width: 100%;
+  padding: 0.4rem;
+  color: #fff;
+
+}

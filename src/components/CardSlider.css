@@ -1,0 +1,82 @@
+.container {
+  gap: 1rem;
+  position: relative;
+  padding: 2rem 0;
+}
+.cardslider{
+  margin: auto;
+}
+h1 {
+  width: 100%;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.wrapper{
+  /* width: 100%;
+  margin-left: 50px; */
+  width: 94%;
+  margin: 1px auto
+}
+.wrapper .slider {
+  width: max-content;
+  gap: 1rem;
+  transform: translateX(0px);
+  transition: 0.3 ease-in-out;
+  margin-left: 50px;
+}
+.slider-action {
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  transition: 0.3s ease-in-out;
+}
+.slick-slide img{
+  width: auto;
+  height: auto;
+}
+
+.slick-arrow{
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  width: 200px;
+    height: 200px; */
+    /* left: 0;
+    right: 0; */
+  /* font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: #b81f1ff2; */
+}
+/* .slick-prev{
+  left: 0;
+}
+.slick-next{
+  right: 0;
+} */
+.slider-action svg {
+  font-size: 2rem;
+}
+.wrapper .left {
+  left: 0;
+}
+.wrapper .right {
+  right: 0 !important;
+}
+.none{
+    display: none;
+}

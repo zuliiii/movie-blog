@@ -34,7 +34,7 @@ export default function Navbar(isScrolled) {
               {links.map(({ name, link }) => {
                 return (
                   <li key={name}>
-                    <Link to={Link}>{name}</Link>
+                    <Link to={link}>{name}</Link>
                   </li>
                 );
               })}

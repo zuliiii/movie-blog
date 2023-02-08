@@ -77,6 +77,28 @@ export const fetchDataByGenre = createAsyncThunk(
   }
 );
 
+export const getUserLikedMovies = createAsyncThunk(
+  "movie-blog/getLiked",
+  async (email) => {
+    const {
+      data: { movies },
+    } = await axios.get(`http://localhost:5000/api/user/liked/${email}`);
+    return movies;
+  }
+);
+
+export const removeUserLikedMovies = createAsyncThunk(
+  "movie-blog/deleteLiked",
+  async ({ email, movieId }) => {
+    const {
+      data: { movies },
+    } = await axios.put(`http://localhost:5000/api/user/delete`, {
+      email,
+      movieId,
+    });
+    return movies;
+  }
+);
 
 // return getRawData(`${BASE_URL}/discover/${type}?api_key=${API_KEY}&with_genres=${genre}`)
 
@@ -92,6 +114,12 @@ const MoviesSlice = createSlice({
       state.movies = action.payload;
     });
     builder.addCase(fetchDataByGenre.fulfilled, (state, action) => {
+      state.movies = action.payload;
+    });
+    builder.addCase(getUserLikedMovies.fulfilled, (state, action) => {
+      state.movies = action.payload;
+    });
+    builder.addCase(removeUserLikedMovies.fulfilled, (state, action) => {
       state.movies = action.payload;
     });
   },

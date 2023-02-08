@@ -1,22 +1,17 @@
-
 const express = require("express");
+const cors = require("cors");
 const userRoutes = require("./routes/UserRoutes");
 const mongoose = require("mongoose");
-mongoose.set("strictQuery", false)
+
 
 const app = express();
 
-const bodyParser = require('body-parser')
-
-app.use(bodyParser.json()) // for parsing application/json
-
-const cors = require("cors");
-app.use(cors({origin: true, credentials: true}));
+app.use(cors());
 app.use(express.json());
 
 mongoose
   .connect(
-    "mongodb+srv://zuli:3423010zuli@cluster0.bheuw8q.mongodb.net/movie-blo",
+    "mongodb+srv://zuli:3423010zuli@cluster0.bheuw8q.mongodb.net/test",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,

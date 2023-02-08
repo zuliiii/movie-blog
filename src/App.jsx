@@ -6,6 +6,7 @@ import NavMovies from "./pages/NavMovies";
 import Player from "./pages/Player";
 import Signup from "./pages/Signup";
 import TVshows from "./pages/TVshows";
+import UserLiked from "./pages/UserLiked";
 export default function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ export default function App() {
         <Route exact path="/player" element={<Player />} />
         <Route exact path="/movies" element={<NavMovies />} />
         <Route exact path="/tv" element={<TVshows />} />
+        <Route exact path="/mylist" element={<UserLiked />} />
         <Route exact path="/" element={<Movies />} />
         
       </Routes>
